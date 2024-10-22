@@ -31,5 +31,5 @@ spec:
             - containerPort: 3000
           env:
             - name: MONGO_URL
-              value: mongo.knote.svc.cluster.local:27017 # <service-name>.<namespace>.svc.cluster.local:<port>
+              value: mongodb://mongo:27017/dev # <service-name>.<namespace>.svc.cluster.local:<port>
           imagePullPolicy: Always
